@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050b13">
+  <meta name="description" content="Shivannagowda Patil is a full-stack developer and AI/ML engineer building useful, AI-powered web applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shivannagowda Patil — Developer Portfolio">
+  <meta property="og:description" content="Projects, experience, skills, and contact information for Shivannagowda Patil.">
+  <meta property="og:url" content="https://USERNAME.github.io/REPO/">
+  <meta property="og:image" content="https://USERNAME.github.io/REPO/assets/favicon.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Shivannagowda Patil — Developer Portfolio">
+  <meta name="twitter:description" content="Projects, experience, skills, and contact information for Shivannagowda Patil.">
+  <meta name="twitter:image" content="https://USERNAME.github.io/REPO/assets/favicon.svg">
+  <title>Shivannagowda Patil — Developer Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Shivannagowda Patil, home">SP<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home" aria-labelledby="hero-title" tabindex="-1">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Hi, I’m</p>
+          <h1 id="hero-title">Shivannagowda <span>Patil</span></h1>
+          <p class="role-line" aria-label="Full-Stack Developer, AI/ML Engineer, Problem Solver">
+            <span class="role-prefix">I’m a</span>
+            <span class="role-text" id="role-text">Full-Stack Developer</span>
+          </p>
+          <p class="availability"><span class="status-dot" aria-hidden="true"></span>Open to Internships &amp; Full-time Roles</p>
+          <p class="hero-description">I build AI-powered web apps, from ML models to production-ready Django backends. B.Tech CS &amp; Design at Sharnbasva University, focused on products that are fast, intuitive, and useful.</p>
+          <div class="hero-contact">
+            <a href="mailto:shivannagowdapolicepatil@gmail.com">shivannagowdapolicepatil@gmail.com</a>
+            <span aria-hidden="true">·</span>
+            <span>Kalaburagi, Karnataka</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View My Work <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="assets/resume.pdf" download>Download Resume <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <aside class="hero-aside" aria-label="Portfolio summary">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="hero-mark" aria-hidden="true">SP</div>
+          <div class="hero-note">
+            <span class="mono-label">CURRENTLY BUILDING</span>
+            <p>Thoughtful products at the intersection of software and machine learning.</p>
+          </div>
+        </aside>
+      </div>
+      <div class="container stats" id="portfolio-stats" aria-label="Portfolio statistics"></div>
+    </section>
+
+    <section class="section section-bordered" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Where I’ve worked</p>
+          <h2 id="experience-title">Experience<span class="heading-period">.</span></h2>
+        </div>
+        <div class="experience-list" id="experience-list"></div>
+      </div>
+    </section>
+
+    <section class="section section-bordered" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2 id="projects-title">Projects<span class="heading-period">.</span></h2>
+          </div>
+          <label class="search-field">
+            <span class="sr-only">Search projects by name or technology</span>
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input id="project-search" type="search" placeholder="Search projects..." autocomplete="off">
+          </label>
+        </div>
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+        <p class="empty-state" id="project-empty" hidden>No projects match that search. Try another title or technology.</p>
+      </div>
+    </section>
+
+    <section class="section section-bordered" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">What I work with</p>
+          <h2 id="skills-title">Skills<span class="heading-period">.</span></h2>
+        </div>
+        <div class="skills-grid" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-bordered" id="certificates" aria-labelledby="certificates-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Learning milestones</p>
+          <h2 id="certificates-title">Certificates<span class="heading-period">.</span></h2>
+        </div>
+        <div class="certificate-empty">
+          <span class="empty-icon" aria-hidden="true">✳</span>
+          <h3>More to come</h3>
+          <p>There are no certificates to display just yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-bordered contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Have a project in mind?</p>
+            <h2 id="contact-title">Let’s talk<span class="heading-period">.</span></h2>
+          </div>
+          <p class="contact-intro">I’m open to opportunities, collaborations, and interesting conversations.</p>
+          <div class="contact-details" id="contact-details"></div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <label for="contact-name">Name</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="100">
+          </div>
+          <div class="form-row">
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" required maxlength="254">
+          </div>
+          <div class="form-row">
+            <label for="contact-subject">Subject</label>
+            <input id="contact-subject" name="subject" type="text" required minlength="2" maxlength="150">
+          </div>
+          <div class="form-row">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" required minlength="10" maxlength="5000"></textarea>
+          </div>
+          <p class="form-note">This static site can’t send messages itself. Submitting opens your email app with a pre-filled draft.</p>
+          <button class="button button-primary form-submit" type="submit">Prepare email <span aria-hidden="true">↗</span></button>
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; built by Shivannagowda Patil.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" hidden>↑</button>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-content">
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="Close project details">×</button>
+      <p class="eyebrow">Project details</p>
+      <h2 id="dialog-title"></h2>
+      <p class="dialog-description" id="dialog-description"></p>
+      <ul class="tag-list dialog-tags" id="dialog-tags" aria-label="Technologies"></ul>
+      <div class="dialog-links" id="dialog-links"></div>
+    </div>
+  </dialog>
+</body>
+</html>
